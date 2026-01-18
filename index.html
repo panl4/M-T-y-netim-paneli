@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yönetim Paneli (Demo / Parodi)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root{
+      --blue:#6ea0d8;
+      --panel:#efefef;
+      --border:#9a9a9a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Tahoma, Arial, sans-serif;background:#d6d6d6}
+    header{
+      background:linear-gradient(#7fb0e6,#6ea0d8);
+      padding:10px 14px;
+      font-weight:bold;
+      border-bottom:2px solid #4f7fb7;
+    }
+    .wrap{padding:12px}
+    .grid{
+      display:grid;
+      grid-template-columns:260px 1fr 260px;
+      gap:10px;
+    }
+    .panel{
+      background:var(--panel);
+      border:1px solid var(--border);
+      padding:8px;
+      min-height:120px;
+    }
+    .panel h3{
+      margin:0 0 6px 0;
+      font-size:14px;
+      border-bottom:1px solid #c9c9c9;
+      padding-bottom:4px;
+    }
+    .btn{
+      width:100%;
+      padding:7px 6px;
+      margin:4px 0;
+      background:#f7f7f7;
+      border:1px solid #bcbcbc;
+      cursor:pointer;
+      font-size:12px;
+    }
+    .btn:hover{background:#e9e9e9}
+    .muted{font-size:11px;color:#444}
+    .center{display:flex;align-items:center;justify-content:center;height:100%}
+    .logo{
+      width:120px;height:120px;border-radius:50%;
+      background:radial-gradient(circle at 30% 30%, #ffe08a, #caa12f);
+      border:6px solid #e5c35a;
+      display:flex;align-items:center;justify-content:center;
+      font-weight:bold
+    }
+    footer{
+      display:flex;gap:8px;justify-content:center;
+      padding:8px;border-top:1px solid #bdbdbd;background:#e9e9e9
+    }
+  </style>
+</head>
+<body>
+  <header>YÖNETİM PANELİ (DEMO / PARODİ)</header>
+
+  <div class="wrap">
+    <div class="grid">
+      <div class="panel">
+        <h3>Genel</h3>
+        <button class="btn" onclick="info()">Duyuru Oluştur</button>
+        <button class="btn" onclick="info()">Medya Paneli</button>
+        <button class="btn" onclick="info()">Dosya İnceleme</button>
+        <p class="muted">* Sadece tasarım amaçlıdır.</p>
+      </div>
+
+      <div class="panel">
+        <div class="center">
+          <div class="logo">DEMO</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Sistem</h3>
+        <button class="btn" onclick="info()">Bot Yönetimi</button>
+        <button class="btn" onclick="info()">Sunucu Ayarları</button>
+        <button class="btn" onclick="info()">Aç / Kapat</button>
+        <p class="muted">Durum: Demo Mod</p>
+      </div>
+
+      <div class="panel">
+        <h3>Personel</h3>
+        <button class="btn" onclick="info()">Listele</button>
+        <button class="btn" onclick="info()">Atama</button>
+        <button class="btn" onclick="info()">Rapor</button>
+      </div>
+
+      <div class="panel">
+        <h3>Kayıt</h3>
+        <input class="btn" placeholder="Not giriniz" />
+        <button class="btn" onclick="info()">Uygula</button>
+        <button class="btn" onclick="info()">İptal</button>
+      </div>
+
+      <div class="panel">
+        <h3>Yardım</h3>
+        <button class="btn" onclick="info()">Hakkında</button>
+        <button class="btn" onclick="info()">Sürüm Bilgisi</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <button class="btn" style="max-width:140px" onclick="info()">Tamam</button>
+    <button class="btn" style="max-width:140px" onclick="info()">Çıkış</button>
+  </footer>
+
+  <script>
+    function info(){
+      alert('Bu site yalnızca TASARIM / PARODİ amaçlıdır. Gerçek işlem yoktur.');
+    }
+  </script>
+</body>
+</html>
